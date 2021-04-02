@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1562155618-e1a8bc2eb04f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDR8fHdlYXRoZXIlMjBhcHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 350px;
+    background-color: rgba(240, 248,255, 0.6);
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+input{
+    width: 100%;
+    /* margin: 0 20px; */
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 0px 8px;
+    text-align: center;
+    font-size: 19px;
+    border-radius: 4px;
+    margin:10px 1px;
+}
+.weather-inf{
+    background-color: rgb(255,255,255,0.6);
+    margin: 28px 0px;
+    height: 346px;
+    border-radius: 5px;
+    display: none;
+}
+.city{
+    padding: 14px 10px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.date{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.temprature{
+    font-size: 57px;
+    font-weight: 700;
+    padding: 10px;
+    /* text-shadow: -1px 0px black; */
+    text-shadow: 2px 4px rgb(0 0 0 / 30%);
+}
+.min-max{
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 700;
+
+}
+.weather-type{
+    font-size: 20px;
+    padding: 8px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#city-info{
+    animation-duration: 0.8s;
+}
+#date-info{
+    animation-duration: 1s;
+}
+#temp-info{
+    animation-duration: 1.5s;
+
+}
+#min-max-info{
+    animation-duration: 2s;
+    
+}
+#weather-type-info{
+    animation-duration: 2.6s;
+
+}
+
+
+
+@media screen and (max-width:405px){
+    .container{
+        width: 300px;
+    }
+    
+}
