@@ -23,6 +23,7 @@ function startForcasting(inpval){
     .then(showWeatherReport)
     .catch(err => {
                 alert(err);
+                inputBox.value="";
           });
 }
 
